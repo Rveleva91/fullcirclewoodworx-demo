@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - label: "Business Info"
+        name: "business-info"
+        file: "data/settings.json"
+        fields:
+          - {label: "Business Name", name: "name", widget: "string"}
+          - {label: "Phone Number", name: "phone", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Address", name: "address", widget: "string"}
+          - {label: "Hours", name: "hours", widget: "text"}
